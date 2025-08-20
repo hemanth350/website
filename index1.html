@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Nature</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    nav {
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: #ffdd00;
+    }
+
+    
+    .hero {
+        height: 100vh;
+        background: url('https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg') center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        background: rgba(0,0,0,0.5);
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .hero p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        max-width: 600px;
+    }
+
+   
+    .about {
+        padding: 60px 20px;
+        text-align: center;
+        background: #f4f4f4;
+    }
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .about p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+ 
+    .gallery {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .gallery h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    .gallery-container img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    .gallery-container img:hover {
+        transform: scale(1.05);
+    }
+
+    
+    .contact {
+        padding: 60px 20px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+    }
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+    .contact form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact input, .contact textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    .contact button {
+        background: #ffdd00;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .contact button:hover {
+        background: #e6c200;
+    }
+
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+
+
+<nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<section class="hero" id="hero">
+    <h1>Explore the Beauty of Nature</h1>
+    <p>Discover breathtaking landscapes, serene escapes, and the wonders of our planet. Your adventure starts here.</p>
+</section>
+
+
+<section class="about" id="about">
+    <h2>About Our Journey</h2>
+    <p>We are passionate explorers who believe in the healing power of nature. Our mission is to inspire people to travel, connect with nature, and create unforgettable memories while preserving our planet for future generations.</p>
+</section>
+
+
+<section class="gallery" id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-container">
+        <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" alt="Nature">
+        <img src="https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg" alt="Forest">
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="Mountains">
+        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="River">
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+<footer>
+    &copy; 2025 Explore Nature. All rights reserved.
+</footer>
+
+</body>
+</html>
